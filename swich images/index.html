@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .img_switch{
+            width: 24.75%;
+            padding-inline: 1px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div style="width: 50%;margin-inline: auto;">
+        <img src="tour-3.jpeg" id="mainImg" alt="" style="width: 100%;">
+    <div style="display: flex;">
+    <img src="tour-3.jpeg" class="img_switch" alt="">
+    <img src="tour-4.jpeg" class="img_switch" alt="">
+    <img src="tour-5.jpeg" class="img_switch" alt="">
+    <img src="tour-6.jpeg" class="img_switch" alt="">
+    </div>
+    </div>
+    <script>
+        let imgs=document.getElementsByClassName("img_switch");
+        let mainImg=document.getElementById('mainImg');
+
+        for(let i=0; i<imgs.length; i++){
+            imgs[i].addEventListener("click",(e)=>{
+                //console.log(e.target.src);
+                let imgPath=(e.target.getAttribute("src"));
+                mainImg.setAttribute("src",imgPath);
+            })
+        }
+    </script>
+</body>
+</html>

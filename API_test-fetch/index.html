@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <meta http-equiv="Conent-Type" content="text/html;charset=UTF-8"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+        li{
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="w-75 mx-auto mt-2">
+        <nav>
+            <ul class="py-2 bg-dark text-light list-unstyled d-flex justify-content-around align-items-center">
+                <li class="li-category active">business</li>
+                <li class="li-category">entertainment</li>
+                <li class="li-category">general</li>
+                <li class="li-category">health</li>
+                <li class="li-category">science</li>
+                <li class="li-category">sports</li>
+                <li class="li-category">technology</li>
+                <li class=" select"> 
+                    <select class="form-control">
+                        <option selected disabled>Language</option>
+                        <option value="us">us</option>
+                        <option value="cz">cz</option>
+                        <option value="mx">mx</option>
+                        <option value="gr">gr</option>
+                        <option value="sa">sa</option>
+                        <option value="eg">eg</option>
+                        <option value="ua">ua</option>
+                      </select>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="container">
+        <div class="row" id="rowData">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

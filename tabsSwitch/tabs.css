@@ -1,0 +1,26 @@
+.tabs{
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.tabs li{
+    padding: 10px;
+    background-color: rgb(233, 236, 238);
+    border-right: 1px solid #fff;
+    cursor: pointer;
+    transition: .2s;
+}
+.tabs li:hover,
+.tabs li.active{
+    background-color: #ddd;
+}
+.content{
+    background-color: #ddd;
+}
+.content div{
+    padding: 20px;
+}
+.content div:not(:first-child){
+    display: none;
+}
